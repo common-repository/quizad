@@ -1,0 +1,555 @@
+/* ---- GENERAL CSS ---- */
+
+#wpbody-content .update-nag {
+    display: none;
+}
+
+#quizAdPluginBody {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    position: relative;
+    display: block;
+    width: 95%;
+    margin: 10px auto;
+    padding-right: 20px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+#quizAdPluginBody .header-name {
+    width: 100%;
+    font-size: 14pt;
+    margin-bottom: 10px;
+}
+
+#quizAdPluginBody .hr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #fafafa;
+}
+
+#quizAdPluginBody .vr {
+
+}
+
+.notice-content {
+    border-left-color: #9f69c1;
+}
+
+#quizAdPluginBody .main-content {
+    width: 80%;
+    float: left;
+    border-right: 1px solid #ddd;
+}
+
+#quizAdPluginBody .aside-content {
+    width: 19%;
+    float: right;
+}
+
+.aside-content .aside-row {
+    padding: 20px 3%;
+    margin: 10px 2%;
+}
+
+/* ---- SETTINGS CSS ---- */
+.main-content-body .registration-row {
+    background-color: #ffffff;
+    /*border-left: 2px solid #9f69c1;*/
+    margin-right: 20px;
+    border-left: 4px solid #9f69c1;
+    padding: 20px 4%;
+}
+
+.registration-row .email {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.email p label span {
+    font-weight: bold;
+    cursor: text;
+    color: #23282d;
+}
+
+.email input[type=email],
+#token, #username, #password {
+    border: 1px solid #eee;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-style: italic;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+#confirm {
+    margin-top: 2px;
+    caret-color: transparent;
+}
+
+.registration-row .btn {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* link przejdz do quizAd */
+.aside-row a.button {
+    max-width: 100%;
+    text-wrap: normal;
+    text-overflow: clip;
+}
+
+input[type=checkbox]:checked + label {
+    color: #9f69c1;
+    font-style: normal;
+    text-decoration: underline;
+
+}
+
+input.input-disabled:disabled {
+    pointer-events: none;
+    background-color: #eee;
+}
+
+.categories.disabled .topPane .pane {
+    pointer-events: none;
+    background-color: #f9f9f9;
+}
+
+.categories.disabled .topPane .rightPane {
+    border: 2px solid #999;
+}
+
+
+/* ---- CATEGORIES CSS ---- */
+
+.option {
+    border-radius: 2px;
+    padding: 6px;
+    color: #666;
+    margin-bottom: 3px;
+    text-align: left;
+    cursor: pointer;
+    user-select: none;
+}
+
+.leftPane, .rightPane {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #eee;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-right: 20px;
+    width: 200px;
+    overflow-y: scroll;
+    height: 300px;
+    display: inline-block;
+}
+
+.rightPane {
+    border: 2px solid #9f69c1;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+.topPane {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.pane::-webkit-scrollbar {
+    height: 8px;
+    width: 4px;
+    background: rgba(0, 0, 0, 0.01);
+}
+
+.pane::-webkit-scrollbar-thumb {
+    background-color: #a0a5aa;
+    -webkit-border-radius: 50px;
+}
+
+/* ---- EMAIL CSS ---- */
+.main-content-info {
+}
+
+/* ---- PLACEMENTS CSS ---- */
+.check-list, .sentence-list {
+    display: table; /* Allow the centering to work */
+    margin: 0 2%;
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
+}
+
+.check-list p {
+    display: inline;
+    padding-right: 10%;
+}
+
+.categories-list {
+    margin: 20px 4%;
+    padding: 0;
+}
+
+.categories-list p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.categories-list p {
+    display: inline-block;
+    width: 33.3333%;
+}
+
+.excluded-list {
+    display: table; /* Allow the centering to work */
+    margin: 0 2%;
+    min-width: 696px;
+    list-style: none;
+    padding: 20px 0;
+}
+
+.excluded-list #data-fetch {
+    margin-left: 5em;
+    margin-top: 20px;
+}
+
+#data-fetch .search_item {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#data-fetch .active {
+    color: #9f69c1;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.excluded-placement li {
+    float: left;
+    padding: 0.4em 1em 0.4em 1em;
+    margin-left: 1em;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    border-radius: 2em;
+    background-color: #0085ba1a;
+}
+
+.excluded-placement li a {
+    font-size: x-large;
+    margin-left: 1em;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:after {
+    content: "\00d7"; /* This will render the 'X' */
+}
+
+.buttons-field {
+    width: 100%;
+    position: relative;
+    display: table;
+    margin-right: 100px;
+    margin-top: 40px;
+}
+
+.buttons-field .btn {
+    display: table-cell;
+    width: 33%;
+    text-align: left;
+}
+
+.buttons-field .btn-all {
+    text-align: right;
+}
+
+p.pull-right {
+    text-align: right;
+}
+
+p.cache-info {
+    font-style: italic;
+    color: #777;
+    margin-top: 20px;
+}
+
+.buttons-field .btn-all .button-all {
+    color: #999999;
+}
+
+.button-small {
+    color: #999999;
+    vertical-align: baseline;
+    width: 5em;
+    text-align: center;
+    margin-left: 1em;
+}
+
+.btn .button-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn .button-danger:hover {
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.break {
+    height: 50px;
+}
+
+.multiselect {
+    margin: 30px 0;
+    width: 50%;
+    display: none;
+}
+
+.selectBox {
+    position: relative;
+}
+
+.selectBox select {
+    width: 100%;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.checkboxes {
+    display: none;
+    border-bottom: 1px #dadada solid;
+    padding: 7px 0;
+    background-color: #f9f9f9;
+
+}
+
+.checkboxes label {
+    display: block;
+}
+
+a.link-disabled {
+    pointer-events: none;
+    background-color: #eee;
+    cursor: default;
+}
+
+/* ---- STATISTICS CSS ---- */
+.statistics-content .up {
+    width: 100%;
+    position: relative;
+    display: table;
+}
+
+.statistics-content .up .left {
+    display: table-cell;
+    width: 50%;
+    padding: 10px 0;
+}
+
+.statistics-content .up .right {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.statistics-content .down {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.statistics-content .top-name {
+    padding-top: 10px;
+}
+
+.statistics-content .down-name {
+    padding: 5px 0;
+}
+
+.chart #myChart {
+    max-width: 100%;
+    max-height: 500px;
+}
+
+
+/*@media (min-width: @screen-sm-min) {*/
+/*    .make-grid(sm);*/
+/*}*/
+
+
+/*Grid system*/
+/*--------------------------------------------------*/
+
+/*Large grid
+Columns, offsets, pushes, and pulls for the large desktop device range.*/
+
+@media (max-width: 1400px) {
+    #quizAdPluginBody .main-content {
+        width: 100%;
+        display: block;
+        border-right: 0;
+    }
+
+    #quizAdPluginBody .main-content .registration-row {
+        margin: 20px 0;
+    }
+
+    #quizAdPluginBody .aside-content {
+        width: 100%;
+        display: block;
+    }
+
+    #quizAdPluginBody .aside-content .aside-row {
+        margin: 20px 0;
+    }
+}
+
+/*Medium grid
+Columns, offsets, pushes, and pulls for the desktop device range.*/
+
+/*@media (max-width: 600px) {*/
+/*    #quizAdPluginBody .main-content {*/
+/*        width: 100%;*/
+/*        display: block;*/
+/*        border-right: 1px solid #ddd;*/
+/*    }*/
+
+/*    #quizAdPluginBody .aside-content {*/
+/*        width: 100%;*/
+/*        display: block;*/
+/*    }*/
+
+/*}*/
+
+/** css spinner */
+.loader {
+    color: #9f69c185;
+    font-size: 30px;
+    text-indent: -9999em;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    margin: 20px auto;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+    animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+}
+
+@-webkit-keyframes load6 {
+    0% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+}
+
+@keyframes load6 {
+    0% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+        box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+        box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+}
+
+@-webkit-keyframes round {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes round {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/** animated check mark */
+.check-mark {
+    box-shadow: inset 0 0 0 #46b450;
+    animation: fill-success .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.error-mark {
+    box-shadow: inset 0 0 0 #dc3232;
+    animation: fill-error .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+
+@keyframes scale {
+    0%, 100% {
+        transform: none;
+    }
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}
+
+@keyframes fill-success {
+    100% {
+        box-shadow: inset 0 0 0 30px #46b450bf;
+    }
+}
+
+@keyframes fill-error {
+    100% {
+        box-shadow: inset 0 0 0 30px #dc3232bd;
+    }
+}

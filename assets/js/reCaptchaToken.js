@@ -1,0 +1,1 @@
+var reCaptchaToken = '6Ld2Z6QUAAAAAMADoAFI6jhBgpsTbeDwCFPXsFmU';
